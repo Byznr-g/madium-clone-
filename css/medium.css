@@ -1,4 +1,4 @@
-.body{
+body{
     font-family: 'PT Serif', serif;
 }
 
@@ -12,3 +12,6 @@
     border-bottom: solid 1px rgba(41, 41, 41, 1);
 }
 
+/* 
+float-right: resim sağa kaydı
+rounded-circle: resim yuvarlak oldu */
