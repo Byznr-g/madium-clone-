@@ -12,10 +12,11 @@
     <title>Medium</title>
 </head>
 <body>
-    <div class="bg-yellow border-bottom-dark">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">Medium</a>
+  <!-- py-1 ile y ekseninde 1 ferahlık verildi -->
+    <div class="bg-yellow border-bottom-dark py-1">  <!--nav start-->
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <a class="navbar-brand" href="#"><strong>Medium</strong></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,7 +38,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Sign In</a>
               </li>
-              <li class="nav-item">
+              <!-- ml-3 ile get started yazısı sign ın yazısından ayrıldı -->
+              <li class="nav-item ml-3">
                 <!-- btn btn-dark text-light (buton ekleme,buton renkgi, yazı rengi) -->
                 <a class="nav-link btn btn-dark text-light" href="#">Get Started</a> 
               </li>
@@ -45,21 +47,335 @@
           </div>
         </nav>
       </div>
-    </div>
+    </div>  <!--nav end-->
 
-    <!-- class verdık -->
-    <div  class="bg-yellow py-5 border-bottom-dark">
+    <div  class="bg-yellow py-5 border-bottom-dark"> <!--üst container start-->
       <div class="container">
         <div class="row">
           <div class="col-6">
-            Lorem, ipsum dolor.
+            <!-- typography -> display ile başlık büyütüldü -->
+            <h1 class="display-4">
+              Medium is a place <br> to write, read, and <br> connect
+            </h1>
+            <!-- paragraf lead classı ile biraz daha buyuk yazıldı -->
+            <p class="lead">
+              It's easy and free to post your thinking on any topic and connect with millions of readers.
+              <!-- altı çizili link. altı çizili olsun diye <u><u> kullanılır -->
+              <a href="#" class="text-dark"><u>Learn More</u></a>
+            </p>
+            <!-- buton oluşturduk -> (a.btn) -->
+            <a href="#" class="btn btn-outline-dark">Start Writing</a>
           </div>
           <div class="col-6">
-            gorsel
+            <!-- resmi yuvarlak yaptık ve sağa kaydırdık -->
+            <img src="https://picsum.photos/300/300" alt="" class="rounded-circle float-right">
           </div>
         </div>
       </div>
-    </div>
+    </div>  <!--üst container end-->
+
+    <div class="container mt-5">   <!--orta container start-->
+      <div class="row"> <!--6lı alan start-->
+        <div class="col-12 mb-2">
+          <!-- fontawesome'dan icon bulup ekledik. yazıyı small içine alıp küçülttük ve onu da ml-2 deyip icon ile arasını ferahlattık -->
+          <h6><i class="fa-solid fa-rocket"></i> <small class="ml-2">TRENDING ON MEDIUM</small> </h6>
+        </div>
+        <!-- her articala mb-2 dedik her bırının altında ferahlık olusturduk -->
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">01</h6>
+            </div>
+            <div class="col-11">
+              <img class="rounded-circle" src="https://picsum.photos/id/11/25/25" alt="">
+              <!-- ismi küçük yazması için small classı verdik ve soldaki resimden biraz ayrılsın diye ml-1 dedik -->
+              <span class="small ml-1">Sienna Mae Gomez</span>
+              <!-- h6 içindeki yazıyı bir de strog içine alıp yazdık, kalın göründü. -->
+              <h6 class="mt-2"><strong>Sienna Mae Gomez: Reflections from an 18-Year Old Me</strong></h6>
+
+              <!-- small clası ekledım kiiii her bırısı kuculsun -->
+              <ul class="list-inline small">
+                <li class="list-inline-item">Jan 23</li>
+                <li class="list-inline-item">15 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">02</h6>
+            </div>
+            <div class="col-11">
+              <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+              <!-- ismi küçük yazması için small classı verdik ve soldaki resimden biraz ayrılsın diye ml-1 dedik -->
+              <span class="small ml-1">
+                Matt Charnock
+                in
+                The Bold Italic</span>
+              <!-- h6 içindeki yazıyı bir de strog içine alıp yazdık, kalın göründü. -->
+              <h6 class="mt-2"><strong>Here’s the Story Behind That Viral Shot of San Francisco</strong></h6>
+
+              <!-- small clası ekledım kiiii her bırısı kuculsun -->
+              <ul class="list-inline small">
+                <li class="list-inline-item">Feb 12</li>
+                <li class="list-inline-item">3 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">03</h6>
+            </div>
+            <div class="col-11">
+              <img class="rounded-circle" src="https://picsum.photos/id/13/25/25" alt="">
+              <!-- ismi küçük yazması için small classı verdik ve soldaki resimden biraz ayrılsın diye ml-1 dedik -->
+              <span class="small ml-1">Medium Staff
+                in
+                3 min read</span>
+              <!-- h6 içindeki yazıyı bir de strog içine alıp yazdık, kalın göründü. -->
+              <h6 class="mt-2"><strong>A Better Medium.com</strong></h6>
+
+              <!-- small clası ekledım kiiii her bırısı kuculsun -->
+              <ul class="list-inline small">
+                <li class="list-inline-item">Feb 8</li>
+                <li class="list-inline-item">3 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">04</h6>
+            </div>
+            <div class="col-11">
+              <img class="rounded-circle" src="https://picsum.photos/id/14/25/25" alt="">
+              <!-- ismi küçük yazması için small classı verdik ve soldaki resimden biraz ayrılsın diye ml-1 dedik -->
+              <span class="small ml-1">Sean Kernan
+                in
+                Mind Cafe</span>
+              <!-- h6 içindeki yazıyı bir de strog içine alıp yazdık, kalın göründü. -->
+              <h6 class="mt-2"><strong>4 Things That Will Vanish In 20 Years</strong></h6>
+
+              <!-- small clası ekledım kiiii her bırısı kuculsun -->
+              <ul class="list-inline small">
+                <li class="list-inline-item">Jan 23</li>
+                <li class="list-inline-item">15 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">05</h6>
+            </div>
+            <div class="col-11">
+              <img class="rounded-circle" src="https://picsum.photos/id/15/25/25" alt="">
+              <!-- ismi küçük yazması için small classı verdik ve soldaki resimden biraz ayrılsın diye ml-1 dedik -->
+              <span class="small ml-1">
+                Galen B
+                in
+                Towards Data Science</span>
+              <!-- h6 içindeki yazıyı bir de strog içine alıp yazdık, kalın göründü. -->
+              <h6 class="mt-2"><strong>The Data Scientist of the Future, According to Google</strong></h6>
+
+              <!-- small clası ekledım kiiii her bırısı kuculsun -->
+              <ul class="list-inline small">
+                <li class="list-inline-item">Feb 11</li>
+                <li class="list-inline-item">5 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-sm-4 mb-2">
+          <div class="row">
+            <div class="col-1">
+              <h6 class="text-black-50">06</h6>
+            </div>
+            <div class="col-11">
+              <img class="rounded-circle" src="https://picsum.photos/id/16/25/25" alt="">
+              <!-- ismi küçük yazması için small classı verdik ve soldaki resimden biraz ayrılsın diye ml-1 dedik -->
+              <span class="small ml-1">
+                Tim Sneath
+                in
+                Flutter</span>
+              <!-- h6 içindeki yazıyı bir de strog içine alıp yazdık, kalın göründü. -->
+              <h6 class="mt-2"><strong>SAnnouncing Flutter for Windows</strong></h6>
+
+              <!-- small clası ekledım kiiii her bırısı kuculsun -->
+              <ul class="list-inline small">
+                <li class="list-inline-item">Feb 3</li>
+                <li class="list-inline-item">7 min read</li>
+                <li class="list-inline-item">
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div> <!--6lı alan end-->
+
+      <div class="row mt-5">  <!-- alt kısım start-->
+
+        <section class="col-sm-8"> <!--sol kısım start-->
+          <artical class="row mb-3">
+            <div class="col-8">
+              <img class="rounded-circle" src="https://picsum.photos/id/81/25/25" alt="">
+              <span class="small ml-1">Melissa Uchiyama in Moms Don’t Have Time to Write</span>
+              <h4 class="mt-2"><strong>I Miscarried and Everyone Wants Me to Focus on Gratitude</strong></h4>
+              <p>I’m learning to balance my grief and guilt with the knowledge that I’m lucky to have the children I do</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item">Jan 23</li>
+                <li class="list-inline-item">15 min read</li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Essay</a>
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <img src="https://picsum.photos/id/35/400/250" alt="" class="w-100">
+            </div>
+          </artical>
+
+          <artical class="row mb-3">
+            <div class="col-8">
+              <img class="rounded-circle" src="https://picsum.photos/id/2/25/25" alt="">
+              <span class="small ml-1">Tim Wise</span>
+              <h4 class="mt-2"><strong>13 Questions for Those Who Want to Ban “Critical Race Theory”</strong></h4>
+              <p>They won’t answer them though. Because if they did, they would sound ridiculous.</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item">Jan 23</li>
+                <li class="list-inline-item">15 min read</li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Essay</a>
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <img src="https://picsum.photos/id/35/400/250" alt="" class="w-100">
+            </div>
+          </artical>
+
+          <artical class="row mb-3">
+            <div class="col-8">
+              <img class="rounded-circle" src="https://picsum.photos/id/21/25/25" alt="">
+              <span class="small ml-1">Hanna Brooks Olsen</span>
+              <h4 class="mt-2"><strong>The Middle Class Privilege Of Storing Your Stuff</strong></h4>
+              <p>Can we ever really be adults if we don’t have space for our American birthright, a rusty coffee cans full of nails?</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item">Jan 23</li>
+                <li class="list-inline-item">15 min read</li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Essay</a>
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <img src="https://picsum.photos/id/56/400/250" alt="" class="w-100">
+            </div>
+          </artical>
+
+          <artical class="row mb-3">
+            <div class="col-8">
+              <img class="rounded-circle" src="https://picsum.photos/id/17/25/25" alt="">
+              <span class="small ml-1">Jerine Nicole
+                in
+                Index</span>
+              <h4 class="mt-2"><strong>Quitting Your Job Isn’t the Goal. Finding Meaningful Work Is</strong></h4>
+              <p>The motivation behind the great resignation</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item">Jan 23</li>
+                <li class="list-inline-item">15 min read</li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Essay</a>
+                  <i class="fa-solid fa-star"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <img src="https://picsum.photos/id/77/400/250" alt="" class="w-100">
+            </div>
+          </artical>
+        </section> <!--sol kısım end-->
+
+        <aside class="col-sm-4 ">  <!--sağ kısım start-->
+          <h6>
+            <small>
+              <strong>DISCOVER MORE OF WHAT MATTERS TO YOU</strong>
+            </small>
+          </h6>
+          <ul class="list-inline aside-buttons">
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Ipsum.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem, ipsum.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Ipsum.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem, ipsum.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem, ipsum.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem, ipsum dolor.</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="btn btn-sm btn-outline-secondary">Lorem, ipsum dolor.</a>
+            </li>
+
+          </ul>
+        </aside>  <!-- sağ kısım end-->
+      </div>  <!--alt kısım end-->
+
+
+    </div> <!--orta container end-->
 
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
