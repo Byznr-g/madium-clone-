@@ -19,3 +19,7 @@ body{
 /* 
 float-right: resim sağa kaydı
 rounded-circle: resim yuvarlak oldu */
+
+.border-top-dark{
+    border-top: 1px solid rgba(230, 230, 230, 1)
+}
